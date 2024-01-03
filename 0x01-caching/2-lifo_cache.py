@@ -27,7 +27,7 @@ class LIFOCache(BaseCaching):
             return
 
         if key not in self.__tracking:
-            popped_key = self.__tracking.pop(0)
+            popped_key = self.__tracking.pop()
             self.cache_data.pop(popped_key)
             print('DISCARD: {}'.format(popped_key))
             self.__tracking.append(key)
