@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""FIFOCACHE module"""
 from base_caching import BaseCaching
 
 
